@@ -1,0 +1,208 @@
+.project__wrapper {
+  position: relative;
+  min-height: 800px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 290px;
+    height: 1px;
+    background-color: $special-grey;
+    bottom: 8px;
+    left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 127px;
+    min-height: 950px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 952px;
+      height: 2px;
+      background-color: $special-grey;
+      bottom: 42px;
+      left: 298px;
+    }
+  }
+}
+
+.project__title {
+  margin: 28px 0 13px 30px;
+
+  @media (min-width: $desktop-width) {
+    margin: 30px 0 17px 330px;
+  }
+}
+
+.project__intro {
+  padding: 0 22px 0 30px;
+  margin: 0 0 24px 0;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 300px;
+    padding-right: 202px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .project__picture {
+    width: 920px;
+    height: 554px;
+  }
+}
+
+.project__major {
+  position: absolute;
+  bottom: 245px;
+  right: 0;
+  width: 93.33%;
+  background-color: $basic-white;
+  padding: 22px 0 15px 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 37.6%;
+    padding: 57px 47px 57px 50px;
+    top: 194px;
+    bottom: auto;
+  }
+}
+
+.project__major-title {
+  margin: 0 0 8px;
+  font-size: $fs-additional;
+  line-height: $lh-additional;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 10px;
+    font-size: $fs-additional-desktop;
+    line-height: $lh-additional-desktop;
+  }
+}
+
+.project__major-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 87.7143%;
+
+  @media (min-width: $desktop-width) {
+    width: 93.38%;
+  }
+}
+
+.project__text {
+  position: absolute;
+  bottom: 49px;
+  margin: 0;
+  padding: 0 20px 0 30px;
+
+  @media (min-width: $desktop-width) {
+    bottom: 90px;
+    margin-left: 330px;
+    margin-right: 200px;
+    padding: 0;
+  }
+}
+
+.slide,
+.item,
+.staff__slider {
+  display: none;
+}
+
+.slide.active,
+.item.active,
+.staff__slider.active {
+  display: block;
+}
+
+.dots-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 273px;
+  left: 65px;
+}
+
+.dots-wrapper-staff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 281px;
+  left: 65px;
+}
+
+.dots-wrapper-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: auto;
+  left: 120px;
+  bottom: 19px;
+}
+
+.dot,
+.dot-staff {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $basic-white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.dot-slider {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $special-blue;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.dot.active,
+.dot-staff.active,
+.dot-slider.active {
+  width: 12px;
+  height: 12px;
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .slider-wrapper {
+    position: relative;
+  }
+}
+
+.button-next {
+  position: absolute;
+  right: 4.8%;
+  width: 20px;
+  height: 18px;
+  bottom: 12%;
+  background-color: transparent;
+  cursor: pointer;
+  background-image: url("/img/arrow.svg");
+}
+
+.button-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .dots-desktop {
+    display: none;
+  }
+}

@@ -1,0 +1,51 @@
+.now {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    column-gap: 73px;
+  }
+}
+
+.now__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: $fs-main;
+
+  @media (min-width: $desktop-width) {
+    font-size: $fs-desktop;
+  }
+}
+
+.now__number {
+  font-size: 36px;
+  line-height: 32px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 48px;
+    line-height: 42px;
+  }
+}
+
+.now__text {
+  margin: 7px 0 0 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 4px 0 0 0;
+  }
+}
+
+
+.now__number-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: flex-end;
+    column-gap: 3px;
+  }
+}

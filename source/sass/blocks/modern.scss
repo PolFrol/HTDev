@@ -1,0 +1,157 @@
+.modern__wrapper {
+  position: relative;
+  min-height: 874px;
+}
+
+.modern__title {
+  margin: 27px 0 14px 18px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 1px;
+    background-color: $special-grey;
+    top: 337px;
+    left: -18px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 539px;
+    background-color: $special-grey;
+    top: 338px;
+    left: -8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 17px 60px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 300px;
+      height: 2px;
+      background-color: $special-grey;
+      top: 205px;
+      left: -60px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 625px;
+      background-color: $special-grey;
+      top: 205px;
+      left: 238px;
+    }
+  }
+}
+
+.modern__column {
+  display: flex;
+  padding: 0 59px 0 20px;
+  column-gap: 22px;
+  margin-bottom: 42px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 59px 0 60px;
+    column-gap: 0;
+    margin-bottom: 88px;
+  }
+}
+
+.modern__text {
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    padding-right: 32px;
+    margin-right: 18px;
+  }
+}
+
+.modern__list {
+  background-color: $basic-white;
+  width: 93.33%;
+  padding: 25px 34px 27px 39px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    width: 37.6%;
+    padding: 63px 40px 60px 85px;
+  }
+}
+
+.modern__item {
+  position: relative;
+}
+
+.modern__item:not(:last-child) {
+  margin-bottom: 8px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.modern__item::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  top: 9px;
+  left: - 20px;
+  background-color: $special-blue;
+
+  @media (min-width: $desktop-width) {
+    width: 15px;
+    top: 12px;
+    left: -24px;
+  }
+}
+
+.modern__photo {
+  position: absolute;
+  bottom: 20px;
+  z-index: 0;
+  right: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 920px;
+    height: 570px;
+    bottom: auto;
+    top: 204px;
+  }
+}
+
+.modern__list--border {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 290px;
+    height: 1px;
+    background-color: $special-grey;
+    bottom: -165px;
+    left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 952px;
+      height: 2px;
+      background-color: $special-grey;
+      bottom: -92px;
+      left: 299px;
+    }
+  }
+}

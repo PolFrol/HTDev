@@ -1,0 +1,14 @@
+.header__wrapper {
+  margin: 23px 0 25px 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 88px 0 33px 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__picture {
+    width: 150px;
+    height: 40px;
+  }
+}
